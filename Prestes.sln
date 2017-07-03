@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{71AA5EF8-581A-47BE-9332-0A2E35E192A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{863724B6-96EF-4BEE-AA4E-90AE8CF3579A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{DCBC3D3F-DFC1-43C0-B473-D2AF05B17B31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{2EAE41DD-02B8-4A14-BD1E-B4A28C297BE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{386F02B0-1B38-4CB7-A85A-59EE96D6F092}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{C0C9B699-7BE1-4AC1-A575-8817261B58AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{B74D6A73-B899-451C-897A-9D3DB23D4C81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prestes.Cotacao.MVC", "Prestes.Cotacao.MVC\Prestes.Cotacao.MVC.csproj", "{4D3DF069-92BC-45EA-8AB2-19FF67C82510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prestes.Cotacao.Application", "Prestes.Cotacao.Application\Prestes.Cotacao.Application.csproj", "{A3D2EAD9-5646-4900-8D64-E432669D3207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prestes.Cotacao.Domain", "Prestes.Cotacao.Domain\Prestes.Cotacao.Domain.csproj", "{B90C661F-1AB6-485F-9ACA-A4285E305D48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prestes.Cotacao.Infra.Data", "Prestes.Cotacao.Data\Prestes.Cotacao.Infra.Data.csproj", "{AA29864C-AA07-44B8-ABF2-C8EAEED04A97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D3DF069-92BC-45EA-8AB2-19FF67C82510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3DF069-92BC-45EA-8AB2-19FF67C82510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3DF069-92BC-45EA-8AB2-19FF67C82510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3DF069-92BC-45EA-8AB2-19FF67C82510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D2EAD9-5646-4900-8D64-E432669D3207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D2EAD9-5646-4900-8D64-E432669D3207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D2EAD9-5646-4900-8D64-E432669D3207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D2EAD9-5646-4900-8D64-E432669D3207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B90C661F-1AB6-485F-9ACA-A4285E305D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B90C661F-1AB6-485F-9ACA-A4285E305D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B90C661F-1AB6-485F-9ACA-A4285E305D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B90C661F-1AB6-485F-9ACA-A4285E305D48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA29864C-AA07-44B8-ABF2-C8EAEED04A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA29864C-AA07-44B8-ABF2-C8EAEED04A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA29864C-AA07-44B8-ABF2-C8EAEED04A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA29864C-AA07-44B8-ABF2-C8EAEED04A97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C0C9B699-7BE1-4AC1-A575-8817261B58AF} = {386F02B0-1B38-4CB7-A85A-59EE96D6F092}
+		{B74D6A73-B899-451C-897A-9D3DB23D4C81} = {386F02B0-1B38-4CB7-A85A-59EE96D6F092}
+		{4D3DF069-92BC-45EA-8AB2-19FF67C82510} = {71AA5EF8-581A-47BE-9332-0A2E35E192A2}
+		{A3D2EAD9-5646-4900-8D64-E432669D3207} = {DCBC3D3F-DFC1-43C0-B473-D2AF05B17B31}
+		{B90C661F-1AB6-485F-9ACA-A4285E305D48} = {2EAE41DD-02B8-4A14-BD1E-B4A28C297BE5}
+		{AA29864C-AA07-44B8-ABF2-C8EAEED04A97} = {C0C9B699-7BE1-4AC1-A575-8817261B58AF}
+	EndGlobalSection
+EndGlobal
