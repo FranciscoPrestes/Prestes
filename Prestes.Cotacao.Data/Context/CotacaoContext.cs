@@ -9,7 +9,7 @@ namespace Prestes.Cotacao.Infra.Data.Context
 {
     public class CotacaoContext : DbContext
     {
-        public CotacaoContext() : base("Talentos")
+        public CotacaoContext() : base("PrestesCotacao")
         {
 
         }

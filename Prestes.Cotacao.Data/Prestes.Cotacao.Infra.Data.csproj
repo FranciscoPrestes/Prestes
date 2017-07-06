@@ -54,6 +54,14 @@
     <Compile Include="Migrations\201707022333554_Gerando Banco com Tabelas Empresa e Comprador.Designer.cs">
       <DependentUpon>201707022333554_Gerando Banco com Tabelas Empresa e Comprador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707060105042_Ajusta CNPJ.cs" />
+    <Compile Include="Migrations\201707060105042_Ajusta CNPJ.Designer.cs">
+      <DependentUpon>201707060105042_Ajusta CNPJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707060239221_Inserindo compradrores.cs" />
+    <Compile Include="Migrations\201707060239221_Inserindo compradrores.Designer.cs">
+      <DependentUpon>201707060239221_Inserindo compradrores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CompradorRepository.cs" />
@@ -67,6 +75,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201707022333554_Gerando Banco com Tabelas Empresa e Comprador.resx">
       <DependentUpon>201707022333554_Gerando Banco com Tabelas Empresa e Comprador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707060105042_Ajusta CNPJ.resx">
+      <DependentUpon>201707060105042_Ajusta CNPJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707060239221_Inserindo compradrores.resx">
+      <DependentUpon>201707060239221_Inserindo compradrores.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
