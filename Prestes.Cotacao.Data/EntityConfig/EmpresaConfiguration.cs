@@ -41,8 +41,9 @@ namespace Prestes.Cotacao.Infra.Data.EntityConfig
                 .IsRequired()
                 .HasMaxLength(30);
 
-
-
+            Property(c => c.Cnpj.Cnpj)
+                .IsRequired()
+                .HasMaxLength(18);
         }
     }
 }
