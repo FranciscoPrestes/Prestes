@@ -1,18 +1,14 @@
 ﻿@model Prestes.Cotacao.MVC.ViewModels.CompradorViewModel
 
-@{
-    ViewBag.Title = "Novo Comprador";
-}
-
-<h2>Create</h2>
+<h2>@ViewBag.Title</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm("Gravar", "Comprador", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
-    
+    @Html.HiddenFor(m=> m.CampradorId)
     <div class="form-horizontal">
-        <h4>CompradorViewModel</h4>
+        <h4>Comprador</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -38,10 +34,23 @@
                 @Html.ValidationMessageFor(model => model.Cpf, "", new { @class = "text-danger" })
             </div>
         </div>
+        
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.EmpresaId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.EmpresaId, new SelectList(Model.Empresas, "EmpresaId", "NomeFantasia"), new { @Class = "form-control" })
+                @Html.ValidationMessageFor(model => model.EmpresaId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+      
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Gravar" class="btn btn-default" />
+                <button type="submit" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-save"></span> Gravar
+                </button>
+                
             </div>
         </div>
     </div>

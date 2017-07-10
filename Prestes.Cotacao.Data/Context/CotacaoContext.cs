@@ -55,5 +55,7 @@ namespace Prestes.Cotacao.Infra.Data.Context
             }
             return base.SaveChanges();
         }
+
+        
     }
 }
