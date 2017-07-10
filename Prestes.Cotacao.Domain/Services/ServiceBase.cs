@@ -19,9 +19,9 @@ namespace Prestes.Cotacao.Domain.Services
             _repository.Add(obj);
         }
 
-        public TEntity GetById(int id)
+        public TEntity GetBy(int id)
         {
-            return _repository.GetById(id);
+            return _repository.GetBy(id);
         }
 
         public IEnumerable<TEntity> GetAll()

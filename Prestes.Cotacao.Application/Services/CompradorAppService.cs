@@ -1,4 +1,5 @@
-﻿using Prestes.Cotacao.Application.Interfaces;
+﻿using System.Collections;
+using Prestes.Cotacao.Application.Interfaces;
 using Prestes.Cotacao.Domain.Entities;
 using Prestes.Cotacao.Domain.Interfaces.Services;
 
@@ -12,5 +13,7 @@ namespace Prestes.Cotacao.Application.Services
         {
             _compradorService = compradorService;
         }
+
+       
     }
 }

@@ -9,7 +9,8 @@ namespace Prestes.Cotacao.Domain.Entities
         public string Nome { get; set; }
         public Email Email { get; set; }
         public CPF Cpf { get; set; }
-        public virtual Empresa Empresa { get; set; }
         public DateTime DataCadastro { get; set; }
+        public int EmpresaId { get; set; }
+        public virtual Empresa Empresa { get; set; }
     }
 }

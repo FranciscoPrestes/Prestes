@@ -1,0 +1,54 @@
+﻿@model Prestes.Cotacao.MVC.ViewModels.CompradorViewModel
+
+
+<h2>Detalhes do Comprador</h2>
+
+<div>
+   <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cpf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpresaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpresaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpresaNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpresaNome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.CampradorId }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

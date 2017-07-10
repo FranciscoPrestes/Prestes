@@ -7,7 +7,7 @@ namespace Prestes.Cotacao.Domain.Entities.ValueObjects
         public string Nome { get; set; }
         public string Abreviacao { get; set; }
 
-        public IEnumerable<EstadosBrasileiros> ObtemEstados()
+        public static IEnumerable<EstadosBrasileiros> ObtemEstados()
         {
             return new List<EstadosBrasileiros>()
             {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using Prestes.Cotacao.Domain.Interfaces.Repository;
 using Prestes.Cotacao.Infra.Data.Context;
 
@@ -17,7 +18,7 @@ namespace Prestes.Cotacao.Infra.Data.Repositories
             Db.SaveChanges();
         }
 
-        public TEntity GetById(int id)
+        public TEntity GetBy(int id)
         {
             return Db.Set<TEntity>().Find(id);
         }
@@ -27,11 +28,13 @@ namespace Prestes.Cotacao.Infra.Data.Repositories
             return Db.Set<TEntity>().ToList();
         }
 
+
         public void Update(TEntity obj)
         {
             Db.Entry(obj).State = EntityState.Modified;
             Db.SaveChanges();
         }
+
 
         public void Remove(TEntity obj)
         {
