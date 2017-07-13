@@ -27,7 +27,8 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Cidade = "Campo Grande",
                     Estado = EstadosBrasileiros.ObtemEstados().FirstOrDefault(e => e.Abreviacao == "MS"),
                     Numero = "123",
-                    Rua = "Rua Centra;"
+                    Rua = "Rua Central",
+                    Cep = "79041-000"
                 }
 
             };
@@ -42,7 +43,7 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Nome = "Francisco Prestes",
                     Cpf = new CPF() { Value = "022.762.731-86" },
                     Email = new Email() { Value = "franciscoprestes01@gmail.com" },
-                    EmpresaId = 1,
+                    EmpresaId = empresa.EmpresaId,
                     Empresa = empresa
                 },
                 new Comprador()
@@ -50,7 +51,7 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Nome = "Jaqueline Britto",
                     Cpf = new CPF() { Value = "022.762.731-77" },
                     Email = new Email() { Value = "jaquebritto@gmail.com" },
-                    EmpresaId = 1,
+                    EmpresaId = empresa.EmpresaId,
                     Empresa = empresa
                 },
                 new Comprador()
@@ -58,7 +59,7 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Nome = "Tompson Dulley",
                     Cpf = new CPF() { Value = "022.762.731-88" },
                     Email = new Email() { Value = "tom@gmail.com" },
-                    EmpresaId = 1,
+                    EmpresaId = empresa.EmpresaId,
                     Empresa = empresa
                 },
                 new Comprador()
@@ -66,7 +67,7 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Nome = "Denver Espalha-Lixo",
                     Cpf = new CPF() { Value = "022.762.731-22" },
                     Email = new Email() { Value = "denver@gmail.com" },
-                    EmpresaId = 1,
+                    EmpresaId = empresa.EmpresaId,
                     Empresa = empresa
 
                 });
