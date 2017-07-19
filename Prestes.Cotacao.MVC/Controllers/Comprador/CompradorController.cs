@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Web.Mvc;
-using AutoMapper;
+﻿using System.Web.Mvc;
 using Prestes.Cotacao.Application.Services;
 using Prestes.Cotacao.MVC.ViewModels;
 

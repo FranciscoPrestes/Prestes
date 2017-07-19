@@ -35,6 +35,7 @@
   <ItemGroup>
     <Compile Include="Entities\Comprador.cs" />
     <Compile Include="Entities\Empresa.cs" />
+    <Compile Include="Entities\Fornecedor.cs" />
     <Compile Include="Entities\ValueObjects\CNPJ.cs" />
     <Compile Include="Entities\ValueObjects\CPF.cs" />
     <Compile Include="Entities\ValueObjects\Email.cs" />
@@ -42,13 +43,16 @@
     <Compile Include="Entities\ValueObjects\EstadosBrasileiros.cs" />
     <Compile Include="Interfaces\Repository\ICompradorRepository.cs" />
     <Compile Include="Interfaces\Repository\IEmpresaRepository.cs" />
+    <Compile Include="Interfaces\Repository\IFornecedorRepository.cs" />
     <Compile Include="Interfaces\Services\ICompradorService.cs" />
     <Compile Include="Interfaces\Services\IEmpresaService.cs" />
+    <Compile Include="Interfaces\Services\IFornecedorService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interfaces\Repository\IRepositoyBase.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Services\CompradorService.cs" />
     <Compile Include="Services\EmpresaService.cs" />
+    <Compile Include="Services\FornecedorService.cs" />
     <Compile Include="Services\ServiceBase.cs" />
   </ItemGroup>
   <ItemGroup />

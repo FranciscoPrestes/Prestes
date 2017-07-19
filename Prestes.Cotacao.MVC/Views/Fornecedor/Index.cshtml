@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Prestes.Cotacao.MVC.ViewModels.FornecedorViewModel>
+
+<h2>Fornecedor</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Email</th>
+        <th>Celular</th>
+        <th>Telefone</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var fornecedor in Model)
+    {
+        <tr>
+            <td>@fornecedor.Nome</td>
+            <td>@fornecedor.Cpf.Value</td>
+            <td>@fornecedor.Email.Value</td>
+            <td>@fornecedor.Celular</td>
+            <td>@fornecedor.Telefone</td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -69,15 +69,18 @@ namespace Prestes.Cotacao.MVC.App_Start
 
             kernel.Bind(typeof(IAppServiceBase<>)).To(typeof(AppServiceBase<>));
             kernel.Bind<ICompreadorAppService>().To<CompradorAppService>();
+            kernel.Bind<IFornecedorAppService>().To<FornecedorAppService>();
             kernel.Bind<IEmpresaAppService>().To<EmpresaAppService>();
            
 
             kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
             kernel.Bind<ICompradorService>().To<CompradorService>();
+            kernel.Bind<IFornecedorService>().To<FornecedorService>();
             kernel.Bind<IEmpresaService>().To<EmpresaService>();
             
             kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
             kernel.Bind<ICompradorRepository>().To<CompradorRepository>();
+            kernel.Bind<IFornecedorRepository>().To<FornecedorRepository>();
             kernel.Bind<IEmpresaRepository>().To<EmpresaRepository>();
 
         }

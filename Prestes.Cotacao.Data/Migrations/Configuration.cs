@@ -15,6 +15,7 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
 
         protected override void Seed(Prestes.Cotacao.Infra.Data.Context.CotacaoContext context)
         {
+            //empresa
             var empresa = new Empresa()
             {
                 EmpresaId = 1,
@@ -27,14 +28,17 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Cidade = "Campo Grande",
                     Estado = EstadosBrasileiros.ObtemEstados().FirstOrDefault(e => e.Abreviacao == "MS"),
                     Numero = "123",
-                    Rua = "Rua Centra;"
+                    Rua = "Rua Central",
+                    Cep = "79041-000"
                 }
 
             };
 
 
+
             context.Empresas.AddOrUpdate(p => p.EmpresaId, empresa);
 
+            //compradores
             context.Compradores.AddOrUpdate(
                 p => p.Nome,
                 new Comprador()
@@ -42,7 +46,7 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Nome = "Francisco Prestes",
                     Cpf = new CPF() { Value = "022.762.731-86" },
                     Email = new Email() { Value = "franciscoprestes01@gmail.com" },
-                    EmpresaId = 1,
+                    EmpresaId = empresa.EmpresaId,
                     Empresa = empresa
                 },
                 new Comprador()
@@ -50,7 +54,7 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Nome = "Jaqueline Britto",
                     Cpf = new CPF() { Value = "022.762.731-77" },
                     Email = new Email() { Value = "jaquebritto@gmail.com" },
-                    EmpresaId = 1,
+                    EmpresaId = empresa.EmpresaId,
                     Empresa = empresa
                 },
                 new Comprador()
@@ -58,7 +62,7 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Nome = "Tompson Dulley",
                     Cpf = new CPF() { Value = "022.762.731-88" },
                     Email = new Email() { Value = "tom@gmail.com" },
-                    EmpresaId = 1,
+                    EmpresaId = empresa.EmpresaId,
                     Empresa = empresa
                 },
                 new Comprador()
@@ -66,10 +70,21 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Nome = "Denver Espalha-Lixo",
                     Cpf = new CPF() { Value = "022.762.731-22" },
                     Email = new Email() { Value = "denver@gmail.com" },
-                    EmpresaId = 1,
+                    EmpresaId = empresa.EmpresaId,
                     Empresa = empresa
-
                 });
+
+            //fornecedores
+            context.Fornecedores.AddOrUpdate(
+                  fornecedor => fornecedor.Nome,
+                  new Domain.Entities.Fornecedor()
+                  {
+                      Nome = "Rafael Teixeira",
+                      Cpf = new CPF() { Value = "423.848.808-37" },
+                      Email = new Email() { Value = "rafaelfteixeira@hotmail.com" },
+
+                  });
+
         }
 
 
