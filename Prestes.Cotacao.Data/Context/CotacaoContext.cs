@@ -16,6 +16,7 @@ namespace Prestes.Cotacao.Infra.Data.Context
 
         public DbSet<Empresa> Empresas { get; set; }
         public DbSet<Comprador> Compradores { get; set; }
+        public DbSet<Fornecedor> Fornecedores { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

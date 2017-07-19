@@ -1,4 +1,3 @@
-using System.Data.Entity;
 using Prestes.Cotacao.Domain.Entities;
 using Prestes.Cotacao.Domain.Entities.ValueObjects;
 
@@ -42,7 +41,16 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Cpf = new CPF() { Cpf = "022.762.731-22" },
                     Email = new Email() { Endereco = "denver@gmail.com" }
                 }
+                );
 
+            context.Fornecedores.AddOrUpdate(
+                fornecedor => fornecedor.Nome,
+                new Fornecedor
+                {
+                    Nome = "Rafael Teixeira",
+                    Cpf = new CPF() { Cpf = "423.848.808-37" },
+                    Email = new Email() { Endereco = "rafaelfteixeira@hotmail.com" }
+                }
                 );
         }
 
