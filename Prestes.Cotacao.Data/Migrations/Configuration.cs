@@ -15,6 +15,7 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
 
         protected override void Seed(Prestes.Cotacao.Infra.Data.Context.CotacaoContext context)
         {
+            //empresa
             var empresa = new Empresa()
             {
                 EmpresaId = 1,
@@ -34,8 +35,10 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
             };
 
 
+
             context.Empresas.AddOrUpdate(p => p.EmpresaId, empresa);
 
+            //compradores
             context.Compradores.AddOrUpdate(
                 p => p.Nome,
                 new Comprador()
@@ -69,8 +72,19 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Email = new Email() { Value = "denver@gmail.com" },
                     EmpresaId = empresa.EmpresaId,
                     Empresa = empresa
-
                 });
+
+            //fornecedores
+            context.Fornecedores.AddOrUpdate(
+                  fornecedor => fornecedor.Nome,
+                  new Domain.Entities.Fornecedor()
+                  {
+                      Nome = "Rafael Teixeira",
+                      Cpf = new CPF() { Value = "423.848.808-37" },
+                      Email = new Email() { Value = "rafaelfteixeira@hotmail.com" },
+
+                  });
+
         }
 
 

@@ -4,7 +4,7 @@
     {
         public static string GetName()
         {
-            return $"Prestes - Cotção";
+            return $"Prestes - Cotação";
         }
     }
 }
