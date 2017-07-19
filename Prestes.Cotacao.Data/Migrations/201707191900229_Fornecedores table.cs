@@ -3,15 +3,9 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Fornecedores : DbMigration
+    public partial class Fornecedorestable : DbMigration
     {
         public override void Up()
-        {
-           
-            DropTable("dbo.Fornecedor");
-        }
-        
-        public override void Down()
         {
             CreateTable(
                 "dbo.Fornecedor",
@@ -27,7 +21,11 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
-            DropColumn("dbo.Empresa", "Endereco_Cep");
+        }
+        
+        public override void Down()
+        {
+            DropTable("dbo.Fornecedor");
         }
     }
 }

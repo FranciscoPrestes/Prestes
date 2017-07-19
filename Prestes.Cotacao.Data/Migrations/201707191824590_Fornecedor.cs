@@ -3,7 +3,7 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Fornecedor : DbMigration
+    public partial class FornecedorMigration : DbMigration
     {
         public override void Up()
         {

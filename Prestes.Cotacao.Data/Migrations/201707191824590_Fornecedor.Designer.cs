@@ -7,9 +7,9 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Fornecedor : IMigrationMetadata
+    public sealed partial class FornecedorMigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Fornecedor));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(FornecedorMigration));
         
         string IMigrationMetadata.Id
         {
