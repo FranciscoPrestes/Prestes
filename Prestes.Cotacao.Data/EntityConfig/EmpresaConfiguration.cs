@@ -29,6 +29,10 @@ namespace Prestes.Cotacao.Infra.Data.EntityConfig
                 .IsRequired()
                 .HasMaxLength(40);
 
+            Property(c => c.Endereco.Cep)
+                .IsRequired()
+                .HasMaxLength(9);
+
             Property(c => c.Endereco.Rua)
                 .IsRequired()
                 .HasMaxLength(60);

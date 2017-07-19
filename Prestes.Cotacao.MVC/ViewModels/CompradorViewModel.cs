@@ -30,10 +30,15 @@ namespace Prestes.Cotacao.MVC.ViewModels
         public string Cpf { get; set; }
 
         [ScaffoldColumn(false)]
+
         public DateTime DataCadastro { get; set; }
+
         [DisplayName("Empresa")]
         public int EmpresaId { get; set; }
+
         public string EmpresaNome { get; set; }
+
+        [ScaffoldColumn(false)]
         public IEnumerable Empresas { get; set; }
 
         //Decidi mapear o objeto ao inves de usar tecnologias como AutoMapper

@@ -2,14 +2,14 @@
 using Prestes.Cotacao.Application.Services;
 using Prestes.Cotacao.MVC.ViewModels;
 
-namespace Prestes.Cotacao.MVC.Controllers.Comprador
+namespace Prestes.Cotacao.MVC.Controllers
 {
-    public class CompradorController : Controller
+    public class EmpresaController : Controller
     {
         private CompradorAppService _compradorApp;
         private EmpresaAppService _empresaApp;
 
-        public CompradorController(CompradorAppService compradorAppService, EmpresaAppService empresaAppService)
+        public EmpresaController(CompradorAppService compradorAppService, EmpresaAppService empresaAppService)
         {
             _compradorApp = compradorAppService;
             _empresaApp = empresaAppService;
@@ -34,7 +34,7 @@ namespace Prestes.Cotacao.MVC.Controllers.Comprador
 
         public ActionResult Create()
         {
-            return View("Form",CompradorViewModel.ModelToViewModel(new Domain.Entities.Comprador(), _empresaApp));
+            return View("Form", CompradorViewModel.ModelToViewModel(new Domain.Entities.Comprador(), _empresaApp));
         }
 
         [HttpPost]
@@ -58,7 +58,7 @@ namespace Prestes.Cotacao.MVC.Controllers.Comprador
                 return RedirectToAction("Index");
             }
 
-            return View("Form",comprador);
+            return View("Form", comprador);
         }
 
         public ActionResult Edit(int id)
@@ -68,11 +68,11 @@ namespace Prestes.Cotacao.MVC.Controllers.Comprador
 
             var compradorViewModel = CompradorViewModel.ModelToViewModel(_compradorApp.GetBy(id), _empresaApp);
 
-            return View("Form",compradorViewModel);
+            return View("Form", compradorViewModel);
         }
 
 
-       
+
         public ActionResult Delete(int id)
         {
             var comprador = _compradorApp.GetBy(id);

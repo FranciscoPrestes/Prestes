@@ -79,6 +79,7 @@
     <Compile Include="Migrations\201707100036383_Criando Empresa.Designer.cs">
       <DependentUpon>201707100036383_Criando Empresa.cs</DependentUpon>
     </Compile>
+
     <Compile Include="Migrations\201707191824590_Fornecedor.cs" />
     <Compile Include="Migrations\201707191824590_Fornecedor.Designer.cs">
       <DependentUpon>201707191824590_Fornecedor.cs</DependentUpon>
@@ -86,6 +87,11 @@
     <Compile Include="Migrations\201707191834369_Fornecedores.cs" />
     <Compile Include="Migrations\201707191834369_Fornecedores.Designer.cs">
       <DependentUpon>201707191834369_Fornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707131942385_Cep nos enderecos.cs" />
+    <Compile Include="Migrations\201707131942385_Cep nos enderecos.Designer.cs">
+      <DependentUpon>201707131942385_Cep nos enderecos.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,11 +126,16 @@
     <EmbeddedResource Include="Migrations\201707100036383_Criando Empresa.resx">
       <DependentUpon>201707100036383_Criando Empresa.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Migrations\201707191824590_Fornecedor.resx">
       <DependentUpon>201707191824590_Fornecedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707191834369_Fornecedores.resx">
       <DependentUpon>201707191834369_Fornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    
+    <EmbeddedResource Include="Migrations\201707131942385_Cep nos enderecos.resx">
+      <DependentUpon>201707131942385_Cep nos enderecos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

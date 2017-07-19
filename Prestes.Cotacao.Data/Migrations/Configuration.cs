@@ -28,7 +28,8 @@ namespace Prestes.Cotacao.Infra.Data.Migrations
                     Cidade = "Campo Grande",
                     Estado = EstadosBrasileiros.ObtemEstados().FirstOrDefault(e => e.Abreviacao == "MS"),
                     Numero = "123",
-                    Rua = "Rua Centra;"
+                    Rua = "Rua Central",
+                    Cep = "79041-000"
                 }
 
             };
