@@ -25,9 +25,14 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    
                     <li>
-                        <a href="/Fornecedor/Index">Fornecedor</a>
+                        @Html.ActionLink("Comprador", "Index", "Comprador")
                     </li>
+                    <li>
+                        @Html.ActionLink("Fornecedor", "Index", "Fornecedor")
+                    </li>
+
                 </ul>
             </div>
         </div>
