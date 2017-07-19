@@ -16,20 +16,9 @@ namespace Prestes.Cotacao.MVC.Controllers.Fornecedor
         [HttpGet]
         public ActionResult Index()
         {
-            return View(_fornecedorApp.GetAll().Select(MapearFornecedores));
+            return View(_fornecedorApp.GetAll().Select(FornecedorViewModel.MapearFornecedores));
         }
 
-        private FornecedorViewModel MapearFornecedores(Domain.Entities.Fornecedor fornecedor)
-        {
-            return new FornecedorViewModel
-            {
-                Id = fornecedor.Id,
-                Nome = fornecedor.Nome,
-                Celular = fornecedor.Celular,
-                Telefone = fornecedor.Telefone,
-                Cpf = fornecedor.Cpf,
-                Email = fornecedor.Email
-            };
-        }
+       
     }
 }

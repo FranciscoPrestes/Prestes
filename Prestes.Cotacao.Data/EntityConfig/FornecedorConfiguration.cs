@@ -13,11 +13,11 @@ namespace Prestes.Cotacao.Infra.Data.EntityConfig
                 .IsRequired()
                 .HasMaxLength(60);
 
-            Property(fornecedor => fornecedor.Email.Endereco)
+            Property(fornecedor => fornecedor.Email.Value)
                 .IsRequired()
                 .HasMaxLength(100);
 
-            Property(fornecedor => fornecedor.Cpf.Cpf)
+            Property(fornecedor => fornecedor.Cpf.Value)
                 .IsRequired()
                 .HasMaxLength(14);
 

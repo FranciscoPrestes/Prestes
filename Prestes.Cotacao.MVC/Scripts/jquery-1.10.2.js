@@ -1520,13 +1520,13 @@ setDocument = Sizzle.setDocument = function( node ) {
 	// Check if getElementById returns elements by name
 	// The broken getElementById methods don't pick up programatically-set names,
 	// so use a roundabout getElementsByName test
-	support.getById = assert(function( div ) {
+	support.GetBy = assert(function( div ) {
 		docElem.appendChild( div ).id = expando;
 		return !doc.getElementsByName || !doc.getElementsByName( expando ).length;
 	});
 
 	// ID find and filter
-	if ( support.getById ) {
+	if ( support.GetBy ) {
 		Expr.find["ID"] = function( id, context ) {
 			if ( typeof context.getElementById !== strundefined && documentIsHTML ) {
 				var m = context.getElementById( id );
@@ -2867,7 +2867,7 @@ function select( selector, context, results, seed ) {
 			// Take a shortcut and set the context if the root selector is an ID
 			tokens = match[0] = match[0].slice( 0 );
 			if ( tokens.length > 2 && (token = tokens[0]).type === "ID" &&
-					support.getById && context.nodeType === 9 && documentIsHTML &&
+					support.GetBy && context.nodeType === 9 && documentIsHTML &&
 					Expr.relative[ tokens[1].type ] ) {
 
 				context = ( Expr.find["ID"]( token.matches[0].replace(runescape, funescape), context ) || [] )[0];

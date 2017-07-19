@@ -2,6 +2,6 @@
 {
     public class Email
     {
-        public string Endereco { get; set; }
+        public string Value { get; set; }
     }
 }

@@ -13,13 +13,15 @@ namespace Prestes.Cotacao.Infra.Data.EntityConfig
                 .IsRequired()
                 .HasMaxLength(60);
 
-            Property(c => c.Email.Endereco)
+            Property(c => c.Email.Value)
                 .IsRequired()
                 .HasMaxLength(100);
 
-            Property(c => c.Cpf.Cpf)
+            Property(c => c.Cpf.Value)
                 .IsRequired()
                 .HasMaxLength(14);
+
+            Property(c=> c.EmpresaId).IsRequired();
 
         }
     }

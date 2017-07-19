@@ -19,9 +19,9 @@ namespace Prestes.Cotacao.Application.Services
             _serviceBase.Add(obj);
         }
 
-        public TEntity GetById(int id)
+        public TEntity GetBy(int id)
         {
-            return _serviceBase.GetById(id);
+            return _serviceBase.GetBy(id);
         }
 
         public IEnumerable<TEntity> GetAll()

@@ -1,0 +1,64 @@
+﻿@model Prestes.Cotacao.MVC.ViewModels.CompradorViewModel
+
+@{
+    
+}
+
+<h2>Deletar Comprador</h2>
+
+<h3>Tem certeza que deseja excluir este comprador?</h3>
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cpf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpresaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpresaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpresaNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpresaNome)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

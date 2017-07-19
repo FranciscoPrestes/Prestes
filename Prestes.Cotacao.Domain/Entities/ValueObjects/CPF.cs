@@ -2,6 +2,6 @@
 {
     public class CPF
     {
-        public string Cpf { get; set; }
+        public string Value { get; set; }
     }
 }

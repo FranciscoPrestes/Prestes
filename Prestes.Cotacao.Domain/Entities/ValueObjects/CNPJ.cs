@@ -2,6 +2,6 @@
 {
     public class CNPJ
     {
-        public string Cnpj { get; set; }
+        public string Value { get; set; }
     }
 }
